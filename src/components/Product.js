@@ -29,7 +29,7 @@ const Product = () => {
   
       // Proceed to payment with the received order ID
       const options = {
-        key: "rzp_test_sNTl9eMeo1SyQY",
+        key: "razorpay_key",
         amount: "50000",
         currency: "INR",
         name: "Acme Corp",
