@@ -8,8 +8,8 @@ const connectDB = require("./db.config");
 const Razorpay = require("razorpay");
 
 const razorpay = new Razorpay({
-  key_id: 'rzp_test_sNTl9eMeo1SyQY',
-  key_secret: 'zLykr6JBpWpwm3vTUxnFurpJ',
+  key_id: 'Razorpay_Key',
+  key_secret: 'Razorpay_secret_key',
 });
 
 connectDB();
@@ -82,7 +82,7 @@ app.post("/api/payment-verification", async (req, res) => {
     console.log("Entered into Payment-Verification");
     // Perform signature verification
     const body_data = razorpay_order_id + "|" + razorpay_payment_id;
-    const expectedSignature = crypto.createHmac('sha256', 'zLykr6JBpWpwm3vTUxnFurpJ').update(body_data).digest("hex");
+    const expectedSignature = crypto.createHmac('sha256', 'razorpay_secret_key').update(body_data).digest("hex");
 
     if (expectedSignature === razorpay_signature) {
       // Signature is valid
