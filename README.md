@@ -1,12 +1,12 @@
-#Getting Started with Frontend
-git clone ""
-npm install
-npm start (To start the frontend server)
+# Getting Started with Frontend
+git clone "".\
+npm install.\
+npm start (To start the frontend server).\
 
-#Getting Started with backend
-cd backend
-npm install
-npm run dev(To start the backend server)
+# Getting Started with backend
+cd backend.\
+npm install.\
+npm run dev(To start the backend server).\
 
 
 
