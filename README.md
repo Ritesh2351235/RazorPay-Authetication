@@ -1,5 +1,5 @@
 # Getting Started with Frontend
-git clone "".\
+git clone "https://github.com/Ritesh2351235/RazorPay-Authetication.git".\
 npm install.\
 npm start (To start the frontend server).\
 
