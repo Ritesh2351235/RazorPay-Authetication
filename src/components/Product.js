@@ -18,7 +18,7 @@ const Product = () => {
     e.preventDefault(); // Prevent form submission
 
     try {
-      const response = await axios.post("http://localhost:5000/api/orders", {
+      const response = await axios.post("https://thankful-dune-06a272c10.5.azurestaticapps.net/api/orders", {
         name: formData.name,
         email: formData.email,
       });
@@ -36,7 +36,7 @@ const Product = () => {
         description: "Test Transaction",
         image: "https://example.com/your_logo",
         order_id: order_id,
-        callback_url: "http://localhost:5000/api/payment-verification",
+        callback_url: "https://thankful-dune-06a272c10.5.azurestaticapps.net/api/payment-verification",
         prefill: {
           name: formData.name,
           email: formData.email,
